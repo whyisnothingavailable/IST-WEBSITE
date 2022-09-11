@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LE SSERAFIM</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.jpg">
+
+</head>
+<body>
+    <div class=" heading">
+      <header>
+          <h1><a href="index.html" class ="header"><img src="images/LE_SSERAFIM_logo.svg.png" alt="LOGO"></a></h1>
+      </header>
+  
+      <nav>
+        <ul>
+            <li><a href="index.html" class ="liststyle">HOME</a></li>
+            <li><a href="members.html" class ="liststyle">MEMBERS</a></li>
+            <li><a href="songs.html" class ="liststyle">SONGS</a></li>
+            <li><a href="gallery.html" class ="liststyle">GALLERY</a></li>
+            <li><a href="about.html" class ="liststyle">ABOUT</a></li>
+        </ul>
+  </nav>
+    </div>
+
+    <gallery>
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <img src="le sserafim/1.jpeg" style="width:1330px">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="le sserafim/3.jpeg" style="width:1330px">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="le sserafim/4.jpeg" style="width:1330px">
+  </div>
+
+<script>
+
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 5000); // Change image every 5 seconds
+}
+
+</script>
+
+    </gallery>
+
+    <main>
+      <div class = summary>
+        
+        LE SSERAFIM (르세라핌) is a 5-member girl group under HYBE and Source Music. The members currently consist of Chaewon, Sakura, Yunjin, Kazuha, and Eunchae. LE SSERAFIM officially debuted on May 2, 2022 with their 1st mini album “FEARLESS”.
+      </div>
+            
+      </main>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<script>
+  // Get the button:
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
+
+</body>
+</html>

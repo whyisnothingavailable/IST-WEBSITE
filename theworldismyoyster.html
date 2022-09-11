@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LE SSERAFIM</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.jpg">
+
+</head>
+<body>
+    <header>
+        <h1><a href="index.html" class ="header"><img src="images/LE_SSERAFIM_logo.svg.png" alt="LOGO"></a></h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html" class ="liststyle">HOME</a></li>
+            <li><a href="members.html" class ="liststyle">MEMBERS</a></li>
+            <li><a href="songs.html" class ="liststyle">SONGS</a></li>
+            <li><a href="gallery.html" class ="liststyle">GALLERY</a></li>
+            <li><a href="about.html" class ="liststyle">ABOUT</a></li>
+        </ul>
+</nav>
+
+<img src="sakura/16.jpeg" alt="" width="100%">
+
+<h1>The World Is My Oyster</h1>
+
+<div class="lyrics">
+    
+    <ul>
+       <p>
+           <div class="korean">
+            
+               <li>
+                <h3>KOREAN</h3>
+                <br>The world is imperfect
+                <br>
+                <br>この世界に満足できない
+                <br>
+                <br>세상은 나를 평가해
+                <br>The world brings out my flaws
+                <br>세상은 나를 바꾸려 하지
+                <br>
+                <br>그렇다면
+                <br>私は強くなりたい
+                <br>I want to take up the challenge
+                <br>나는 꺾이지 않아
+                <br>I am fearless
+                <br>
+                <br>나는-
+                <br>I-
+                <br>私は-
+                <br>世界を手に入れたい
+                <br>
+                <br>The world is my oyster
+                
+               </li>
+           </p>
+           </div>
+       <div class="english">
+        <h3>ROMANIZED</h3>
+        <li>
+            <br>The world is imperfect
+            <br>kono sekai ni manzokudekinai
+            <br>sesangeun nareul pyeonggahae
+                    <br>
+            <br>The world brings out my flaws
+            <br>sesangeun nareul bakkuryeo haji
+                    <br>
+            <br>geureodamyeon
+                    <br>
+            <br>watashi wa tsuyoku naritai
+            <br>I want to take up the challenge
+            <br>naneun kkeokkiji ana
+                    <br>
+            <br>I am fearless
+                    <br>
+            <br>naneun
+            <br>I
+            <br>watashi wa
+                    <br>
+            <br>sekai wo teni iretai
+            <br>The world is my oyster
+           </li>
+       </div>
+    </ul>
+</div>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<script>
+  // Get the button:
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LE SSERAFIM</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.jpg">
+
+</head>
+<body>
+    <header>
+        <h1><a href="index.html" class ="header"><img src="images/LE_SSERAFIM_logo.svg.png" alt="LOGO"></a></h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html" class ="liststyle">HOME</a></li>
+            <li><a href="members.html" class ="liststyle">MEMBERS</a></li>
+            <li><a href="songs.html" class ="liststyle">SONGS</a></li>
+            <li><a href="gallery.html" class ="liststyle">GALLERY</a></li>
+            <li><a href="about.html" class ="liststyle">ABOUT</a></li>
+        </ul>
+</nav>
+
+<div class="about">
+
+<h2>About This Site</h2>
+
+<p>This site was created by Yujin Johnson. It's a profile and fact website on the female KPOP group Lesserafim. Images from official instagram accounts and photoshoots are included to make it look more professional and official. </p>
+
+<h2>Bonus Marks</h2>
+
+    <p>
+
+        <ul>
+            <li><h4>Some Javascript functionality </h4>
+            The automatic gallery and the back-to-the-top button uses javascript for further funtionality and engagement of the website. 
+
+            </li>
+            <li><h4>Use of an external CSS file to ensure a consistent look and feel of the site and easy changes to the appearance of the entire site.</h4>
+            
+            <p>All the pages are linked to a style sheet. Because of some overlapping coding, the profile pages for the members have a separate stylesheet. This has been done to make styling easier and more regulated.</p>
+            </li>
+            <li><h4>Overall appearance and consistency</h4>
+                The overall appearance is very consistent with the header and navigation bar on all pages and similar formatting on the profile and song pages. There is only black and white (excluding the images) because those are the colours of the official logo and the website had been styled around that colour scheme. Everything follows the stylesheets which makes the font, colours, sixe, width, etc. regular. The formatting is regulated as well such as the centered header and navigation bar.
+        </ul>
+    </p>
+    <h2>Directly Copied Code</h2>
+    <ul>
+        <li><h4>Automatic Slider Gallery </h4>
+        The code for the automatic slider gallery on the Home page was copied from https://www.w3schools.com/howto/howto_js_slideshow.asp but it was edited so it is not exactly the same.
+        </li>
+        <li><h4>Gallery</h4></li>
+        The code for the gallery on the Home page was copied from  https://www.w3schools.com/howto/howto_js_tab_img_gallery.asp 
+        but the css was edited so it is not exactly the same.
+        <li><h4>Back-To-The-Top Button</h4></li>
+        The code for the back-to-the-top Button on the Home page was copied from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp but the css was edited so it is not exactly the same.
+
+        </ul>
+
+</div>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<script>
+  // Get the button:
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
+
+</body>
+</html>

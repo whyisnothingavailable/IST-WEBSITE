@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LE SSERAFIM</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.jpg">
+
+</head>
+<body>
+    <header>
+        <h1><a href="index.html" class ="header"><img src="images/LE_SSERAFIM_logo.svg.png" alt="LOGO"></a></h1>
+    </header>
+
+    <nav>
+      <ul>
+          <li><a href="index.html" class ="liststyle">HOME</a></li>
+          <li><a href="members.html" class ="liststyle">MEMBERS</a></li>
+          <li><a href="songs.html" class ="liststyle">SONGS</a></li>
+          <li><a href="gallery.html" class ="liststyle">GALLERY</a></li>
+          <li><a href="about.html" class ="liststyle">ABOUT</a></li>
+      </ul>
+</nav>
+
+<head>
+  
+    <style>
+    div.gallery {
+      margin: 5px;
+      border: 1px solid #ccc;
+      float: left;
+      width: 300px;
+    }
+    
+    div.gallery:hover {
+      border: 1px solid #777;
+    }
+    
+    div.gallery img {
+      width: 300px;
+      height: auto;
+    }
+    
+    div.desc {
+      padding: 15px;
+      text-align: center;
+    }
+    </style>
+    </head>
+    <body>
+
+    <ul>
+       <li>
+         <div class="gallery">
+            <a href="fearless.html" class ="liststyle">
+              <img src="images/song.png" alt="" width="800" height="400">
+            </a>
+            <div class="desc">FEARLESS
+        </div>
+       </li>
+      
+      <li>
+        <div class="gallery">
+          <a href="sourgrapes.html" class ="liststyle">
+            <img src="images/song.png" alt="" width="600" height="400">
+          </a>
+            <div class="desc">Sour Grapes</div>
+        </div>
+      </li>
+      
+      <li>
+        <div class="gallery">
+          <a href="blueflame.html" class ="liststyle">
+            <img src="images/song.png" alt="" width="600" height="400">
+          </a>
+            <div class="desc">Blue Flame</div>
+        </div>
+      </li>
+  
+      <li>
+        <div class="gallery">
+          <a href="thegreatmermaid.html" class ="liststyle">
+            <img src="images/song.png" alt="" width="600" height="400">
+          </a>
+            <div class="desc">The Great Mermaid</div>
+        </div>
+      </li>
+
+      <li>
+        <div class="gallery">
+          <a href="theworldismyoyster.html" class ="liststyle">
+            <img src="images/song.png" alt="" width="600" height="400">
+          </a>
+            <div class="desc">The World Is My Oyster</div>
+        </div>
+      </li>
+
+        <li>
+          <div class="gallery">
+            <a href="raisey_ourglass.html" class ="liststyle">
+              <img src="images/raise your glass.jpg" alt="" width="600" height="400">
+            </a>
+              <div class="desc">Raise y_our glass</div>
+          </div>
+        </li>
+    </ul>
+  
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<script>
+  // Get the button:
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
+    </body>
+
+  </html>
